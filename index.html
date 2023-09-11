@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: url(images/hand-holding-tree-on-blur-green-nature-background-concept-eco-earth-day-stockpack-adobe-stock-1024x543.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  .login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  .login-container button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+</style>
+</head>
+<body >
+<div class="login-container">
+  <h2>Login</h2>
+  <form>
+    <div>
+      <input type="text"  id="username" required>
+      <label>username</label>
+    </div>
+    <div>
+      <input type="password"  id="password" required>
+      <label>password</label>
+    </div>
+   <a href="./main.html">
+    <button onclick="location.href='main.html'" type="button">Login</button>  
+  </a>
+  </form>
+</div>
+
+
+</body>
+</html>

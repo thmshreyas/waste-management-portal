@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information Form</title>
+</head>
+<style>
+
+</style>
+<body>
+    <h1>User Information Form</h1>
+    <form action="connect.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="locality">Locality:</label>
+        <input type="text" id="locality" name="locality" required><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+        <small>Format: 1234567890</small><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
