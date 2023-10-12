@@ -5,21 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<header>
+    <h1 style="text-align: center;">Garbage Disposal Hub</h1>
+</header>
+<h1 style = "margin-top: 20 px;margin-bottom: 20 px;text-align: center;font-size: 100 px;color: rgb(13, 13, 18);"> Welcome to our Waste Reporting and Management System</h1>
+<h1 style="text-align: center;">
+    Report a Place and Problem</h1>
 <body>
     <form onsubmit="myfunc(event)">
-        <div>
-            
+        <div class="container">
+           <li style="padding: 10px;">
             <label>Name</label>
             <input type="text" id="name" required />
-
+            </li>
+             <li style="padding: 10px;">
             <label>Phone number</label>
             <input type="text" id="phonenumber" required/>
-        
+        </li>
+             <li style="padding: 10px;">
             <label>waste_located_place</label>
             <input type="text" id="waste_located_place" required />
+            </li>
+            <li style="padding: 10px;"> 
+            <label for="problem">problem/issue:</label>
+            <input type="text"  id="problem"name="problem" rows="4" required>
+        </li>
         </div>
-        <input type="submit" value="submit" />
-        <a  style="padding: 20px;"    href="./main.html">back to main page</a>
+        <div class="click" style="padding-top: 20px;">
+        <input class="buton" type="submit" value="submit" />
+     
+        <a  style="padding: 20px;margin-left: 500px; "    href="./main.html">Back to Main Page</a>
+    </div>
     </form>
     <style>
         div{
@@ -37,11 +53,37 @@
             var name=document.getElementById("name").value;
             var waste_located_place=document.getElementById("waste_located_place").value;
             var phonenumber=document.getElementById("phonenumber").value;
+            var problem=document.getElementById("problem").value;
             localStorage.setItem('name',name);
             localStorage.setItem('waste_location',waste_located_place);
             localStorage.setItem('phonenumber',phonenumber);
+            localStorage.setItem('problem',problem);
 
         }
     </script>
 </body>
 </html>
+<style>
+    .buton{
+        text-align: center;
+    }
+    .container {
+    
+    background-color: #fff;
+    border-radius: 80px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-top: 100px;
+    padding-left: 180px;
+    border-left: 200px;
+    margin-left: 180px;
+    width: 800px;
+     }
+
+
+     .click{
+        border: 100px;
+     }
+
+
+</style>
